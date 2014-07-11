@@ -55,7 +55,9 @@ log "restarting postgres..."
 sudo service postgresql restart
 
 # go to source directory
-cdir $APP_DIR
+#cdir $APP_DIR
 #git reset --hard
+
+cd $APP_DIR/server && npm install
 
 echo "The install development script is done!"
